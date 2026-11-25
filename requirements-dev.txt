@@ -1,0 +1,17 @@
+# Generado con: pip install .[dev] && pip freeze --exclude mail-multi-mcp (Python 3.13)
+-r requirements.txt
+ast_serialize==0.13.1
+coverage==7.17.5
+iniconfig==2.3.1
+librt==0.17.0
+mypy==2.4.1
+mypy_extensions==1.2.0
+packaging==26.4
+pathspec==1.1.1
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.2.0
+pytest-asyncio==1.5.0
+pytest-cov==7.1.0
+respx==0.23.1
+ruff==0.17.6
