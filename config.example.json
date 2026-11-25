@@ -1,0 +1,22 @@
+{
+  "_comment": "Ejemplo con placeholders. NO copies este archivo con datos reales al repo. El CLI genera estos dos archivos en el directorio de configuración del usuario (ver README). Los secretos (client secret de Google, refresh tokens, cache de MSAL) van al keychain del SO, nunca a estos archivos.",
+  "accounts.json": {
+    "accounts": [
+      {"alias": "personal", "email": "alice@example.com", "provider": "gmail", "mode": "full"},
+      {"alias": "trabajo", "email": "alice@example.org", "provider": "gmail", "mode": "read_only"},
+      {"alias": "outlook", "email": "alice@example.net", "provider": "graph", "mode": "full"}
+    ],
+    "settings": {
+      "max_body_chars": 20000,
+      "max_sends_per_hour": 20,
+      "search_concurrency": 4
+    }
+  },
+  "oauth_clients.json": {
+    "google": {"client_id": "TU_CLIENT_ID.apps.googleusercontent.com"},
+    "microsoft": {
+      "client_id": "00000000-0000-0000-0000-000000000000",
+      "authority": "https://login.microsoftonline.com/consumers"
+    }
+  }
+}
