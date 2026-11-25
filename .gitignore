@@ -1,0 +1,33 @@
+# Entornos y caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Secretos: NUNCA al repo
+.env
+.env*
+credentials*.json
+client_secret*.json
+token*.json
+oauth_clients.json
+accounts.json
+*.pem
+*.key
+audit*.jsonl
+
+# Editor / SO
+.DS_Store
+.idea/
+.vscode/
+.claude/
