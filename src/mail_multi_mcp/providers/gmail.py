@@ -298,6 +298,7 @@ class GmailProvider:
         msg.set_content(r.body)
         thread_id = orig.get("threadId")
         draft = self._create(msg, thread_id)
+        thread_id = thread_id or (draft.get("message") or {}).get("threadId")
         return DraftRef(
             id=self._id(draft["id"]),
             account=self.account.alias,
